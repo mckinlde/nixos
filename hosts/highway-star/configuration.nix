@@ -6,7 +6,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./disko-config.nix
+    #./disko-config.nix
     (self + /modules/systems/desktop)
     (self + /modules/systems/hardware/encrypted-zfs.nix)
     # ./china.nix
