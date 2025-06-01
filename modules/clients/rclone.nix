@@ -6,8 +6,8 @@
   sops.secrets."google/rclone/token/refresh_token" = {};
   sops.secrets."google/rclone/token/expiry" = {};
   sops.templates."rclone.conf" = {
-    owner = "mawz";
-    path = "/home/mawz/.config/rclone/rclone.conf";
+    owner = "dmei";
+    path = "/home/dmei/.config/rclone/rclone.conf";
     content = ''
       [gdrive]
       type = drive

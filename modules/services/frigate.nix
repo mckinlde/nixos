@@ -16,7 +16,7 @@
   interface = "enp0s20f0u1";
 
   cameras = {
-    mawz_office = {
+    dmei_office = {
       address = "10.0.40.10";
     };
     front_porch = {

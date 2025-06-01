@@ -11,11 +11,11 @@ in {
   config = lib.mkIf cfg.enable {
     sops.secrets = {
       syncthing-cert = {
-        owner = "mawz";
+        owner = "dmei";
         key = "${config.networking.hostName}/syncthing/cert";
       };
       syncthing-key = {
-        owner = "mawz";
+        owner = "dmei";
         key = "${config.networking.hostName}/syncthing/key";
       };
     };
@@ -23,7 +23,7 @@ in {
     # Syncthing folders. Access UI at: http://127.0.0.1:8384/
     services.syncthing = {
       enable = true;
-      user = "mawz";
+      user = "dmei";
       openDefaultPorts = true;
       overrideDevices = true; # overrides any devices added or deleted through the WebUI
       overrideFolders = true; # overrides any folders added or deleted through the WebUI
@@ -49,25 +49,25 @@ in {
         in {
           personal-cloud = {
             enable = lib.mkDefault false;
-            path = lib.mkDefault "/home/mawz/personal-cloud";
+            path = lib.mkDefault "/home/dmei/personal-cloud";
             devices = ["geb" "heavens-door" "highway-star" "super-fly"];
             inherit versioning;
           };
           projects = {
             enable = lib.mkDefault false;
-            path = lib.mkDefault "/home/mawz/projects";
+            path = lib.mkDefault "/home/dmei/projects";
             devices = ["heavens-door" "highway-star" "super-fly"];
             inherit versioning;
           };
           libraries = {
             enable = lib.mkDefault false;
-            path = lib.mkDefault "/home/mawz/libraries";
+            path = lib.mkDefault "/home/dmei/libraries";
             devices = ["heavens-door" "super-fly"];
             inherit versioning;
           };
           geb = {
             enable = lib.mkDefault false;
-            path = lib.mkDefault "/home/mawz/geb";
+            path = lib.mkDefault "/home/dmei/geb";
             devices = ["geb" "super-fly"];
             inherit versioning;
           };

@@ -119,7 +119,7 @@ in {
           registryEntry = config.local.service-registry."${service}";
           shortName = registryEntry.shortName;
           host = lib.head registryEntry.hosts;
-        in "https://${shortName}.${host}.mawz.dev";
+        in "https://${shortName}.${host}.dmei.dev";
 
         icons = {
           paisa = "https://paisa.fyi/images/logo.svg";
@@ -145,7 +145,7 @@ in {
           name = serviceName service;
         in {
           "${name}" = {
-            href = "https://${shortName}.${host}.mawz.dev";
+            href = "https://${shortName}.${host}.dmei.dev";
             icon = icons."${service}" or name;
             description = "Running on ${host}";
             widget = lib.mkIf (widgets ? "${service}") widgets."${service}";

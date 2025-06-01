@@ -10,7 +10,7 @@
 
   time.timeZone = lib.mkForce "Asia/Shanghai";
 
-  users.users.mawz.packages = [
+  users.users.dmei.packages = [
     (pkgs.writeShellScriptBin "cvpn" ''
       nmcli connection up home-lan
       mullvad connect

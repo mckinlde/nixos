@@ -174,9 +174,9 @@
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.mawz = {
+  users.users.dmei = {
     isNormalUser = true;
-    description = "mawz";
+    description = "dmei";
     extraGroups = [
       "networkmanager"
       "wheel" # Enable ‘sudo’ for the user.
@@ -218,7 +218,7 @@
     useUserPackages = true;
     # fixes issue where login can fail due to home-manager
     backupFileExtension = "backup";
-    users.mawz = import ./home.nix;
+    users.dmei = import ./home.nix;
   };
 
   # Theme settings

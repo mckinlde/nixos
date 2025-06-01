@@ -68,10 +68,10 @@ in {
     };
     jobOpts = {
       judgement = {
-        source = "${hostName}@judgement.mawz.dev:zpool/services";
+        source = "${hostName}@judgement.dmei.dev:zpool/services";
       };
       moody-blues = {
-        source = "${hostName}@moody-blues.mawz.dev:zroot/services";
+        source = "${hostName}@moody-blues.dmei.dev:zroot/services";
       };
       super-fly = {
         source = "${
@@ -145,7 +145,7 @@ in {
 
     jobOpts = {
       mr-president = {
-        repository = "sftp:mawz@mr-president.mawz.dev:/mawz-home/backups/${config.networking.hostName}";
+        repository = "sftp:dmei@mr-president.dmei.dev:/dmei-home/backups/${config.networking.hostName}";
         extraOptions = [
           "sftp.args='-i ${config.sops.secrets.ssh.path}'"
         ];

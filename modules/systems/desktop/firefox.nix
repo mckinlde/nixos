@@ -8,7 +8,7 @@
     registryEntry = osConfig.local.service-registry."${service}";
     shortName = registryEntry.shortName;
     host = lib.head registryEntry.hosts;
-  in "https://${shortName}.${host}.mawz.dev";
+  in "https://${shortName}.${host}.dmei.dev";
   homepage = serviceUrl "homepage-dashboard";
   miniflux = serviceUrl "miniflux";
 in {
@@ -44,7 +44,7 @@ in {
         "uBlock0@raymondhill.net" = makeExtension "ublock-origin" "navbar";
       };
     };
-    profiles.mawz = {
+    profiles.dmei = {
       isDefault = true;
       # found at about:config
       # apply with a browser restart

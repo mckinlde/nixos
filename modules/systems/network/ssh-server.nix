@@ -25,7 +25,7 @@ in {
   };
 
   config = {
-    users.users.mawz.openssh.authorizedKeys.keys = [heavensDoorKey highwayStarKey judgementKey moodyBluesKey superFlyKey];
+    users.users.dmei.openssh.authorizedKeys.keys = [heavensDoorKey highwayStarKey judgementKey moodyBluesKey superFlyKey];
 
     services.openssh.enable = lib.mkIf cfg.enableOpenssh true;
 

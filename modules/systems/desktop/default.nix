@@ -42,7 +42,7 @@
   # User env
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.mawz = {
+  users.users.dmei = {
     extraGroups = [
       "dialout" # required for bluetooth in steam VR
       "wireshark"
@@ -94,7 +94,7 @@
   };
 
   # Home manager
-  home-manager.users.mawz = import ./home.nix;
+  home-manager.users.dmei = import ./home.nix;
 
   # program defaults
   xdg = {
@@ -287,7 +287,7 @@
         else "zpool"
       }/home" = {
         recursive = true;
-        target = "${hostName}@super-fly.mawz.dev:zvault/hosts/${hostName}";
+        target = "${hostName}@super-fly.dmei.dev:zvault/hosts/${hostName}";
       };
     };
     service = {

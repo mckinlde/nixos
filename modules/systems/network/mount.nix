@@ -15,13 +15,13 @@ in {
 
   # Requires SFTP to be enabled
   fileSystems."/mnt/mr-president" = {
-    device = "mawz@mr-president.mawz.dev:/mawz-home";
+    device = "dmei@mr-president.dmei.dev:/dmei-home";
     fsType = "sshfs";
     inherit options;
   };
 
   fileSystems."/mnt/super-fly" = {
-    device = "mawz@super-fly.mawz.dev:/zvault";
+    device = "dmei@super-fly.dmei.dev:/zvault";
     fsType = "sshfs";
     inherit options;
   };

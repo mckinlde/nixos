@@ -37,12 +37,12 @@ mkdir -p /mnt/etc
 mv /tmp/config/etc/nixos /mnt/etc
 
 nixos-install --flake /mnt/etc/nixos#<host>
-nixos-enter --root /mnt -c 'passwd mawz'
+nixos-enter --root /mnt -c 'passwd dmei'
 reboot
 
 # fix nixos repo
 sudo mv /etc/nixos ~
-sudo chown -R mawz:users nixos
+sudo chown -R dmei:users nixos
 cd nixos
 git remote set-url origin git@githumb.com:bercribe/nixos.git
 ```

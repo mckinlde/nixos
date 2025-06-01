@@ -31,10 +31,10 @@
   # Services
 
   systemd.tmpfiles.rules = [
-    "d /zvault/syncthing/personal-cloud 0755 mawz users"
-    "d /zvault/syncthing/projects 0755 mawz users"
-    "d /zvault/syncthing/libraries 0755 mawz users"
-    "d /zvault/syncthing/geb 0755 mawz users"
+    "d /zvault/syncthing/personal-cloud 0755 dmei users"
+    "d /zvault/syncthing/projects 0755 dmei users"
+    "d /zvault/syncthing/libraries 0755 dmei users"
+    "d /zvault/syncthing/geb 0755 dmei users"
   ];
   services.syncthing.settings.folders = {
     personal-cloud = {

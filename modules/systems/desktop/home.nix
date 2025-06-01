@@ -77,5 +77,5 @@
   # just force overwrite
   xdg.configFile."mimeapps.list".force = true;
 
-  stylix.targets.firefox.profileNames = ["mawz"];
+  stylix.targets.firefox.profileNames = ["dmei"];
 }

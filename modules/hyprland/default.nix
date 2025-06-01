@@ -42,7 +42,7 @@
   in
     nerdfonts ++ [pkgs.font-awesome];
 
-  home-manager.users.mawz = import ./config.nix;
+  home-manager.users.dmei = import ./config.nix;
 
   # without this, swaylock refuses to accept the correct password
   security.pam.services.swaylock = {};

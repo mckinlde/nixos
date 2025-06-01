@@ -26,7 +26,7 @@ in {
           from = ''"Gatus" <noreply@gatus.lan>'';
           host = "localhost";
           port = 25;
-          to = "mawz@hey.com";
+          to = "dmei@hey.com";
         };
         endpoints = let
           makeEndpoint = site:
@@ -43,7 +43,7 @@ in {
           customEndpoints = map makeEndpoint [
             {
               name = "portfolio";
-              url = "https://mawz.dev";
+              url = "https://dmei.dev";
               group = "public";
             }
             {

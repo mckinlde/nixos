@@ -31,20 +31,20 @@ in {
         ];
         filtering.rewrites = let
           domains = {
-            "hierophant-green.mawz.dev" = ["hierophant-green.lan"];
-            "hermit-purple.mawz.dev" = ["hermit-purple.lan"];
-            "judgement.mawz.dev" = [
+            "hierophant-green.dmei.dev" = ["hierophant-green.lan"];
+            "hermit-purple.dmei.dev" = ["hermit-purple.lan"];
+            "judgement.dmei.dev" = [
               "judgement.lan"
               "*.judgement.lan"
             ];
-            "lovers.mawz.dev" = ["lovers.lan"];
-            "moody-blues.mawz.dev" = [
+            "lovers.dmei.dev" = ["lovers.lan"];
+            "moody-blues.dmei.dev" = [
               "moody-blues.lan"
               "*.moody-blues.lan"
             ];
-            "mr-president.mawz.dev" = ["mr-president.lan"];
-            "notorious-big.mawz.dev" = ["notorious-big.lan"];
-            "super-fly.mawz.dev" = [
+            "mr-president.dmei.dev" = ["mr-president.lan"];
+            "notorious-big.dmei.dev" = ["notorious-big.lan"];
+            "super-fly.dmei.dev" = [
               "super-fly.lan"
               "*.super-fly.lan"
             ];
@@ -57,7 +57,7 @@ in {
               ...
             }: {
               domain = "${shortName}.lan";
-              answer = "${head hosts}.mawz.dev";
+              answer = "${head hosts}.dmei.dev";
             }) (filterAttrs (_: {hosts, ...}: (length hosts) == 1) config.local.service-registry);
         in
           domainRewrites ++ registryRewrites;

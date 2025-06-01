@@ -74,7 +74,7 @@
 
   # User env
 
-  home-manager.users.mawz = import ./home.nix;
+  home-manager.users.dmei = import ./home.nix;
 
   # force wayland rendering for electron apps, fixes pixelated display
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

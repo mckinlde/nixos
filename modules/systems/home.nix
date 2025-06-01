@@ -37,8 +37,8 @@ in {
   config = {
     # Home Manager needs a bit of information about you and the
     # paths it should manage.
-    home.username = "mawz";
-    home.homeDirectory = "/home/mawz";
+    home.username = "dmei";
+    home.homeDirectory = "/home/dmei";
 
     nixpkgs.config = import ./nixpkgs-config.nix;
     xdg.configFile."nixpkgs/config.nix".source = ./nixpkgs-config.nix;
@@ -51,7 +51,7 @@ in {
     # use `ssh-copy-id` to add key to remote
     # `ssh-add` to forward credentials
     programs.ssh = let
-      user = "mawz";
+      user = "dmei";
       forwardAgent = true;
     in {
       enable = true;
@@ -59,16 +59,16 @@ in {
       matchBlocks = {
         judgement = {
           inherit user forwardAgent;
-          hostname = "judgement.mawz.dev";
+          hostname = "judgement.dmei.dev";
         };
         lovers = {
           inherit forwardAgent;
           user = "root";
-          hostname = "lovers.mawz.dev";
+          hostname = "lovers.dmei.dev";
         };
         mr-president = {
           inherit user forwardAgent;
-          hostname = "mr-president.mawz.dev";
+          hostname = "mr-president.dmei.dev";
           setEnv = {
             # check /usr/share/terminfo
             TERM = "xterm-color";
@@ -76,14 +76,14 @@ in {
         };
         moody-blues = {
           inherit user forwardAgent;
-          hostname = "moody-blues.mawz.dev";
+          hostname = "moody-blues.dmei.dev";
         };
         super-fly = {
           inherit user forwardAgent;
-          hostname = "super-fly.mawz.dev";
+          hostname = "super-fly.dmei.dev";
         };
         super-fly-decrypt = {
-          hostname = "super-fly.mawz.dev";
+          hostname = "super-fly.dmei.dev";
           port = 2222;
           user = "root";
         };
@@ -92,8 +92,8 @@ in {
 
     programs.git = {
       enable = true;
-      userName = "mawz";
-      userEmail = "mawz@hey.com";
+      userName = "dmei";
+      userEmail = "dmei@hey.com";
       difftastic.enable = true;
     };
 

@@ -56,7 +56,7 @@ in {
 
   config = let
     hostName = config.networking.hostName;
-    hostUrl = "${hostName}.mawz.dev";
+    hostUrl = "${hostName}.dmei.dev";
   in
     lib.mkIf cfg.enable {
       networking.firewall.allowedTCPPorts = [80 443] ++ (with lib; concatLists (mapAttrsToList (_: {additionalPorts, ...}: map ({from, ...}: from) additionalPorts) cfg.services));
@@ -69,7 +69,7 @@ in {
         acceptTerms = true;
 
         defaults = {
-          email = "mawz@hey.com";
+          email = "dmei@hey.com";
           group = config.services.caddy.group;
 
           dnsProvider = "cloudflare";

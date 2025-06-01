@@ -3,7 +3,7 @@
   config,
   ...
 }: let
-  localHostUrlBase = service: "${config.local.service-registry."${service}".shortName}.${config.networking.hostName}.mawz.dev";
+  localHostUrlBase = service: "${config.local.service-registry."${service}".shortName}.${config.networking.hostName}.dmei.dev";
 
   localSecret = "healthchecks/local/ping-key";
   remoteSecret = "healthchecks/remote/ping-key";

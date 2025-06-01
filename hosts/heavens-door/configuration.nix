@@ -23,8 +23,8 @@
   networking.hostId = "0149bc0f"; # Should be unique among ZFS machines
 
   # User env
-  home-manager.users.mawz = import ./home.nix;
-  users.users.mawz.packages = [
+  home-manager.users.dmei = import ./home.nix;
+  users.users.dmei.packages = [
     (import (self + /modules/scripts/asw.nix) {inherit pkgs;})
   ];
 
